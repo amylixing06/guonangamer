@@ -1,28 +1,16 @@
 # 国男大冒险
 
-本项目来源于<a href="https://github.com/Fengzi2333">fengzi2333</a>的<a href="https://github.com/Fengzi2333/GuoNanSimulator">GuoNanSimulator</a>项目。
+本项目基于[fengzi2333](https://github.com/Fengzi2333)的[GuoNanSimulator](https://github.com/Fengzi2333/GuoNanSimulator)项目，由[lylelove](https://github.com/lylelove)使用Vue重构。
 
-经<a href="https://github.com/lylelove">lylelove</a>使用Vue重构。
+## 主要功能
 
-## 新功能
+### 可安装到手机
+- 点击浏览器的"添加到主屏幕"，像App一样使用
+- 支持离线使用
+- 加载更快
+- 自动更新
 
-### PWA支持
-
-本项目现已支持PWA（渐进式Web应用）功能：
-
-- 可以添加到主屏幕，像原生应用一样使用
-- 支持离线访问
-- 缓存资源，提高加载速度
-- 自动更新检测
-
-在支持PWA的浏览器中访问时，可以通过浏览器菜单中的"添加到主屏幕"选项将应用添加到设备主屏幕。
-
-### 暗黑主题
-
-本项目现已支持暗黑主题：
-
-- 点击左下角的主题切换按钮(🌓)可以在亮色和暗色主题之间切换
-- 主题设置会被保存，下次访问时自动应用
-- 在PWA模式下，系统状态栏颜色也会随之调整
-
-暗黑主题不仅提供了更舒适的夜间浏览体验，还能有效降低设备耗电量。
+### 暗黑模式
+- 点击左下角月亮图标(🌓)切换亮/暗模式
+- 设置会自动保存
+- 夜间使用更护眼，省电
