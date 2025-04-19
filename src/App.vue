@@ -2,7 +2,7 @@
   <div id="app">
     <h1>国男大冒险</h1><div id="waline"></div>
     <event ref="event" :class="gameover == true ? 'none' : ''"></event>
-    <result ref="result" :class="gameover == false ? 'none' : ''" ></result>
+    <result ref="result" :class="gameover == false ? 'none' : ''"></result>
     <el-dialog title="关于" :visible.sync="dialogVisible2" >
       <div>本项目来源于<a href="https://github.com/Fengzi2333">fengzi2333</a>的<a href="https://github.com/Fengzi2333/GuoNanSimulator">GuoNanSimulator</a>项目。<br><br>经<a href="https://github.com/lylelove">lylelove</a>使用Vue重构。</div>
     </el-dialog>
@@ -141,11 +141,11 @@ export default {
         },
         {
           id:"res4",
-          res:"你忘了跟上前面的队伍，突然听到一个女生喊“你是不是插我队？！”接着一个玻璃瓶就碎在了你的后脑勺，虽然你最后制服了对方，但你也受伤住院。<br><br>关键词：广东医科大学 玻璃瓶",
+          res:"你忘了跟上前面的队伍，突然听到一个女生喊"你是不是插我队？！"接着一个玻璃瓶就碎在了你的后脑勺，虽然你最后制服了对方，但你也受伤住院。<br><br>关键词：广东医科大学 玻璃瓶",
           pic:"无妄之灾",
         },        {
           id:"res5",
-          res:"你将小偷捉了现行，对方却表示“抛开事实不谈，你坐了我常坐的位子难道就没错吗”，然后砸了你的耳机扬长而去。<br><Br>关键词：华东理工大学 耳机",
+          res:"你将小偷捉了现行，对方却表示"抛开事实不谈，你坐了我常坐的位子难道就没错吗"，然后砸了你的耳机扬长而去。<br><Br>关键词：华东理工大学 耳机",
           pic:"捉贼拿脏",
         },        {
           id:"res6",
@@ -178,7 +178,7 @@ export default {
         },        {
           id:"res13",
           res:"你表示此事绝无回旋余地，对岳父闭门不见，他离去时你从窗户看到他带着刀，暗自庆幸。",
-          pic:"未来可期<br><br><br>恭喜你已通关当前版本，本游戏中所有结局，除“同道中人”不确定是否有真实案例外，均根据真实事件改编，如有雷同，刻意为之。",
+          pic:"未来可期<br><br><br>恭喜你已通关当前版本，本游戏中所有结局，除"同道中人"不确定是否有真实案例外，均根据真实事件改编，如有雷同，刻意为之。",
         },
       ]
       
