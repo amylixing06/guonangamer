@@ -1,0 +1,21 @@
+{
+  "name": "国男大冒险",
+  "short_name": "国男大冒险",
+  "description": "一个基于真实事件改编的模拟器游戏",
+  "start_url": "/GuoNanSimulator/index.html",
+  "display": "standalone",
+  "background_color": "#c0c0c0",
+  "theme_color": "#c0c0c0",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 

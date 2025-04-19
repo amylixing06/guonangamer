@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/GuoNanSimulator/favicon.png">
+    <title>国男大冒险 - 离线模式</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="/GuoNanSimulator/dark-theme.css">
+    <style>
+        body {
+            font-family: Avenir, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: center;
+            color: #2c3e50;
+            margin: 0;
+            padding: 20px;
+            background-color: #c0c0c0;
+        }
+        .window {
+            width: 80%;
+            max-width: 500px;
+            margin: 50px auto;
+        }
+        .window-body {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+    </style>
+    <!-- 主题切换脚本 -->
+    <script src="/GuoNanSimulator/theme-switcher.js"></script>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">国男大冒险 - 离线模式</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <img src="/GuoNanSimulator/favicon.png" alt="Logo" width="64">
+            <h1>您当前处于离线状态</h1>
+            <p>请检查您的网络连接并重试。</p>
+            <p>国男大冒险支持离线模式，如果您之前已经访问过，部分功能仍可使用。</p>
+            <button onclick="window.location.reload()">重试</button>
+        </div>
+    </div>
+</body>
+</html> 

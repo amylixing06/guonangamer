@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/GuoNanSimulator/favicon.png">
+    <title>国男大冒险</title>
+    <link rel="manifest" href="/GuoNanSimulator/manifest.json">
+    <meta name="theme-color" content="#2a2a2a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="国男大冒险">
+    <link rel="apple-touch-icon" href="/GuoNanSimulator/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="/GuoNanSimulator/dark-theme.css">
+    <link href="/GuoNanSimulator/css/app.47094c85.css" rel="preload" as="style">
+    <link href="/GuoNanSimulator/css/chunk-vendors.a16c4353.css" rel="preload" as="style">
+    <link href="/GuoNanSimulator/js/app.e1175a50.js" rel="preload" as="script">
+    <link href="/GuoNanSimulator/js/chunk-vendors.68fe4d71.js" rel="preload" as="script">
+    <link href="/GuoNanSimulator/css/chunk-vendors.a16c4353.css" rel="stylesheet">
+    <link href="/GuoNanSimulator/css/app.47094c85.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+    <script src="/GuoNanSimulator/theme-switcher.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const themeObserver = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        const isDarkTheme = document.documentElement.classList.contains('dark-theme');
+                        const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+                        if (metaThemeColor) {
+                            metaThemeColor.setAttribute('content', isDarkTheme ? '#2a2a2a' : '#c0c0c0');
+                        }
+                    }
+                });
+            });
+            
+            themeObserver.observe(document.documentElement, { attributes: true });
+        });
+    </script>
+</head>
+
+<body><noscript><strong>We're sorry but guonan doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong></noscript>
+    <div class="title-bar">
+        <div class="title-bar-text">GuoNanSimulator</div>
+        <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <fieldset>
+        <div id="app" style="background-color: #c0c0c0;"></div>
+    </fieldset>
+    <br><br><br>
+    <div class="title-bar">
+        <div class="title-bar-text">Message</div>
+        <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <fieldset>
+        <div id="waline"></div>
+    </fieldset>
+    <script>
+        Waline({
+            el: '#waline',
+            serverURL: 'https://messages.lylelove.top',
+        });
+    </script>
+    <script src="/GuoNanSimulator/js/chunk-vendors.68fe4d71.js"></script>
+    <script src="/GuoNanSimulator/js/app.e1175a50.js"></script>
+    <script src="/GuoNanSimulator/sw-register.js"></script>
+    <!-- <script src="https://giscus.app/client.js" data-repo="lylelove/GuoNanSimulator" data-repo-id="R_kgDOGpltfw"
+        data-category="Announcements" data-category-id="DIC_kwDOGpltf84CAnN5" data-mapping="pathname"
+        data-reactions-enabled="1" data-emit-metadata="0" data-theme="light" data-lang="zh-CN" crossorigin="anonymous"
+        async>
+    </script> -->
+</body>
+
+</html>

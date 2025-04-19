@@ -1,0 +1,107 @@
+/* 暗黑主题样式 */
+:root.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --title-color: #ffffff;
+  --border-color: #444444;
+  --button-bg: #383838;
+  --button-text: #e0e0e0;
+  --button-hover-bg: #505050;
+  --window-bg: #2a2a2a;
+  --window-title-bg: #383838;
+  --window-title-text: #ffffff;
+  --link-color: #64b5f6;
+  --link-hover: #90caf9;
+}
+
+/* 基础样式覆盖 */
+body.dark-theme {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* 98.css 暗黑风格覆盖 */
+.dark-theme .title-bar {
+  background: linear-gradient(90deg, #383838, #2a2a2a);
+  color: var(--window-title-text);
+}
+
+.dark-theme .window {
+  background-color: var(--window-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme fieldset {
+  background-color: var(--window-bg);
+  border-color: var(--border-color);
+}
+
+.dark-theme button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border-color);
+}
+
+.dark-theme button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.dark-theme #app {
+  background-color: var(--window-bg) !important;
+}
+
+.dark-theme a {
+  color: var(--link-color);
+}
+
+.dark-theme a:hover {
+  color: var(--link-hover);
+}
+
+/* Element UI 暗黑风格覆盖 */
+.dark-theme .el-button--success {
+  background-color: #2e7d32;
+  border-color: #1b5e20;
+}
+
+.dark-theme .el-button--success:hover {
+  background-color: #388e3c;
+}
+
+.dark-theme .el-button--danger {
+  background-color: #c62828;
+  border-color: #b71c1c;
+}
+
+.dark-theme .el-dialog {
+  background-color: var(--window-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dark-theme .el-dialog__title {
+  color: var(--title-color);
+}
+
+/* 主题切换按钮 */
+.theme-switch {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #383838;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .theme-switch {
+  background-color: #e0e0e0;
+  color: #383838;
+} 
